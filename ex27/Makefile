@@ -1,22 +1,25 @@
 NAME = libft.a
 
-SRCS = .c
+FCT = ft_putchar.c ft_putstr.c
 
-OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
+SRCS = ft_display_file.c ft_putchar.c ft_putstr.c
 
-HEADERS = includes
+OBJ = ft_display_file.o ft_putchar.o ft_putstr.o
 
-all : $(NAME)
+HEADERS = -Wall -Werror -Wextra
 
-$(NAME) :
-		gcc -I $(HEADERS) -c $(SRCS)
+all : compil
+
+compil :
+		gcc $(HEADERS) -c $(SRCS)
 		ar rc $(NAME) $(OBJ)
 		ranlib $(NAME)
+		gcc $(HEADERS) $(NAME)
 
 clean :
 		/bin/rm -f $(OBJ)
 
 fclean : clean
-		/bin/rm -f $(NAME)
+		/bin/rm -f $(NAME) a.out
 
 re : fclean all
