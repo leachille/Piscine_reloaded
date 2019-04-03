@@ -14,12 +14,12 @@ compil :
 		gcc $(HEADERS) -c $(SRCS)
 		ar rc $(NAME) $(OBJ)
 		ranlib $(NAME)
-		gcc $(HEADERS) $(NAME)
+		gcc $(HEADERS) $(NAME) -o ft_display_file
 
 clean :
 		/bin/rm -f $(OBJ)
 
 fclean : clean
-		/bin/rm -f $(NAME) a.out
+		/bin/rm -f $(NAME) ft_display_file
 
 re : fclean all

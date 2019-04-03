@@ -6,11 +6,11 @@
 /*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 23:18:22 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/03 23:19:42 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/04 01:37:13 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char *c);
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {

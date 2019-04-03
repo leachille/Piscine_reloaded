@@ -6,9 +6,11 @@
 /*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 23:32:06 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/03 23:32:51 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/04 01:38:26 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 int		*ft_range(int min, int max)
 {
