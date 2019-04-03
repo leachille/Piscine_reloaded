@@ -6,14 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 19:22:06 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/02 19:29:17 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/03 21:27:06 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {

@@ -3,25 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/03 21:22:43 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/03 21:23:25 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/03 23:45:03 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/03 23:45:30 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_count_if(char **tab, int(*f)(char*))
+int		ft_count_if(char **tab, int (*f)(char*))
 {
-  int i;
-  int a;
+	int i;
+	int a;
 
-  a = 0;
-  i = 0;
-  while (tab[i] != 0)
-  {
-    if (f(tab[i] == 1);
-      a++;
-    i++;
-  }
-  return (a);
+	a = 0;
+	i = 0;
+	while (tab[i] != 0)
+	{
+		if (f(tab[i]) == 1)
+			a++;
+		i++;
+	}
+	return (a);
 }

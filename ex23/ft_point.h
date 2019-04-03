@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/03 21:22:14 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/03 21:23:27 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/03 23:35:27 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/03 23:36:17 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
 # define FT_POINT_H
 
-typedef	struct	s_point
+typedef struct	s_point
 {
 	int x;
 	int y;

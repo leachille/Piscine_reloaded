@@ -3,25 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/03 21:22:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/03 21:23:29 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/03 23:30:16 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/03 23:31:04 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
-  char *dest;
-  int i;
+	char	*dest;
+	int		i;
 
-  i = 0;
-  while (src[i] != '\0')
-    i++;
-  if(!(dest = malloc(sizeof(*dest) * i + 1)))
-    return (0);
-  i = 0;
-  while (src[i] != '\0')
-    dest[i] = src[i];
-  return (*dest);
+	i = 0;
+	while (src[i] != '\0')
+		i++;
+	if (!(dest = malloc(sizeof(*dest) * i + 1)))
+		return (0);
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }

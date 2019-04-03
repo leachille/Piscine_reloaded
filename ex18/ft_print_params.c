@@ -3,40 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/03 21:21:48 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/03 21:23:33 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/03 23:23:12 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/03 23:29:14 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar (char *c);
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
 {
-  write(1, &c, 1);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+	ft_putchar('\n');
 }
 
-void ft_putstr(char *str)
+int		main(int ac, char **av)
 {
-  int i;
+	int	i;
 
-  i = 0;
-  while (str[i] != '\0')
-    {
-      ft_putchar (str[i]);
-      i++;
-    }
-}
-
-int main(int nbarg, char ** varg)
-{
-  int i;
-
-  i = 1;
-  if (nbarg < 2)
-    return (0);
-  while (i <= nbarg)
-  {
-    ft_putstr(varg[i]);
-    i++;
-  }
+	i = 1;
+	if (ac < 2)
+		return (0);
+	while (i < ac)
+	{
+		ft_putstr(av[i]);
+		i++;
+	}
+	return (0);
 }
